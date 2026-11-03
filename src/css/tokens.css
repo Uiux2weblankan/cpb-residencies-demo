@@ -1,0 +1,55 @@
+/* Design tokens taken from the Figma file (Central Park Desktop UI Design V03). */
+:root {
+  /* Brand */
+  --green-950: #011810;
+  --green-900: #033825;
+  --green-700: #116a47;
+  --gold-600: #be6421;
+  --gold-100: #f7eace;
+  --gold-50: #fcf8ee;
+  --gray-950: #070a0d;
+  --gray-900: #080b0c;
+  --gray-800: #212529;
+  --gray-500: #6b7177;
+  --white: #ffffff;
+
+  --gold-600-10: rgb(190 100 33 / 0.10);
+  --gold-600-20: rgb(190 100 33 / 0.20);
+  --green-900-20: rgb(3 56 37 / 0.20);
+  --gray-950-20: rgb(7 10 13 / 0.20);
+  --gray-950-60: rgb(7 10 13 / 0.60);
+  --white-10: rgb(255 255 255 / 0.10);
+  --white-80: rgb(255 255 255 / 0.80);
+
+  /* Unit status (development plan: Available, Reserved, Sold) */
+  --status-available: #033825;
+  --status-reserved: #e8ce06;
+  --status-sold: #f7431a;
+  --status-fill-opacity: 0.45;
+  /* Pill colours: the Figma pill uses green-700 for Available */
+  --pill-available: var(--green-700);
+  --pill-reserved: #e8ce06;
+  --pill-sold: #f7431a;
+
+  /* Type */
+  --font-sans: "Instrument Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  /* Daeling (Figma display face) is not web-licensed here; Italiana is the stand-in. */
+  --font-display: "Daeling", "Italiana", "Cormorant Garamond", Georgia, serif;
+
+  /* Shape and depth */
+  --radius-card: 30px;
+  --radius-pill: 999px;
+  --shadow-card: 0 24px 60px rgb(7 10 13 / 0.35);
+  --shadow-button: 8px 8px 8px rgb(0 0 0 / 0.4);
+
+  /* Layout */
+  --gutter: clamp(16px, 5.2vw, 100px);
+  --header-h: clamp(76px, 9.9vw, 190px);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 150ms;
+  --dur-base: 250ms;
+  --dur-slow: 400ms;
+}

@@ -1,0 +1,274 @@
+/* Check Availability page: 2.1 (overview) and 2.1.1 (tower) — Figma Web UI [Dasi]. */
+
+.page--availability { background: var(--gray-950); }
+/* Space kept clear at the top: the site header when present, a margin otherwise. */
+body { --top-offset: clamp(20px, 3.7vw, 40px); }
+body.show-header { --top-offset: var(--header-h); }
+
+/* The site header (Figma: Navigation) shows only on 2.1 "Find Your Residence".
+   It slides away when the viewer flies into a tower and returns on the way back. */
+.page--availability .site-header {
+  transition: opacity 400ms var(--ease-out), transform 400ms var(--ease-out), visibility 0s;
+}
+.page--availability:not(.show-header):not(.menu-open) .site-header {
+  opacity: 0; transform: translateY(-24px); visibility: hidden;
+  transition: opacity 300ms var(--ease-out), transform 300ms var(--ease-out), visibility 0s 300ms;
+}
+
+/* Primary Gold Gradient / 200 → 300, used for the display titles */
+.gold-title {
+  font-family: var(--font-display); font-weight: 400; line-height: 1; letter-spacing: -2px;
+  background: linear-gradient(180deg, #eed499, #e5b864);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+/* Primary Gold Gradient / 200 → 100, used for filter values */
+.gold-text {
+  background: linear-gradient(180deg, #eed499, #f7eace);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+
+/* ---------- 2.1 · Header Section (breadcrumb + "Find Your Residence") ---------- */
+.k0-title {
+  position: absolute; z-index: 8; left: 50%; top: 25%;
+  display: flex; flex-direction: column; align-items: center; gap: clamp(14px, 1.3vw, 25px);
+  text-align: center; pointer-events: none;
+  opacity: 0; transform: translate(-50%, 12px);
+  transition: opacity 450ms var(--ease-out), transform 450ms var(--ease-out);
+}
+.k0-title.is-open { opacity: 1; transform: translate(-50%, 0); }
+.crumbs {
+  display: flex; align-items: center; gap: clamp(12px, 1.05vw, 20px);
+  font-size: clamp(12px, 0.89vw, 17px); font-weight: 500; line-height: 1;
+  letter-spacing: clamp(2px, 0.26vw, 5px); text-transform: uppercase; white-space: nowrap;
+  color: rgb(247 234 206 / 0.8);
+}
+.crumbs strong { font-weight: 700; }
+.crumbs i { width: 3px; height: 13px; background: rgb(247 234 206 / 0.8); }
+.k0-title__title { font-size: clamp(44px, 4.17vw, 80px); white-space: nowrap; padding-bottom: 0.08em; }
+
+/* ---------- 2.1.1 · Container (Back, title, Filter Container) ---------- */
+.tower-panel {
+  --panel-gap: clamp(24px, 3.1vw, 60px);
+  position: absolute; z-index: 12;
+  top: calc(var(--top-offset) + clamp(12px, 3.1vw, 60px));
+  left: var(--gutter);
+  width: var(--panel-w);
+  display: flex; flex-direction: column; align-items: flex-start; gap: var(--panel-gap);
+  opacity: 0; transform: translateX(-16px);
+  transition: opacity 400ms var(--ease-out), transform 400ms var(--ease-out);
+}
+.viewer { --panel-w: clamp(420px, 31.25vw, 600px); }
+/* Tower B mirrors Tower A: panel on the right, buttons in reverse order, title right-aligned. */
+.tower-panel[data-side="right"] { left: auto; right: var(--gutter); transform: translateX(16px); align-items: flex-end; }
+.tower-panel[data-side="right"] .tower-panel__nav { flex-direction: row-reverse; }
+.tower-panel[data-side="right"] .tower-switch { margin-left: 0; margin-right: auto; }
+.tower-panel.is-open { opacity: 1; transform: none; }
+
+.tower-panel__nav { width: 100%; display: flex; align-items: center; gap: 12px; }
+
+/* Switch tower: Figma Primary_Button (white pill, green indicator), the same pill as the
+   overview's "Tower A / Tower B" — a different kind of action from the glass buttons. */
+.tower-switch {
+  display: inline-flex; align-items: center; gap: 10px; margin-left: auto;
+  padding: clamp(14px, 1.05vw, 20px);
+  border-radius: var(--radius-pill);
+  background: var(--white); border: 1px solid var(--green-900-20);
+  color: var(--gray-900); font-size: clamp(15px, 0.94vw, 18px); font-weight: 500; line-height: 1; white-space: nowrap;
+  transition: background-color var(--dur-fast);
+}
+.tower-switch:hover { background: var(--gold-50); }
+
+/* Legibility scrim behind the panel (gray-950, as the 2.1.1 image treatment). */
+.tower-scrim {
+  position: absolute; inset: 0; z-index: 11; pointer-events: none;
+  opacity: 0; transition: opacity 400ms var(--ease-out);
+  --scrim: linear-gradient(var(--scrim-dir, 90deg),
+    rgb(7 10 13 / 0.85) 0,
+    rgb(7 10 13 / 0.72) calc(var(--gutter) + var(--panel-w) * 0.6),
+    rgb(7 10 13 / 0.45) calc(var(--gutter) + var(--panel-w)),
+    rgb(7 10 13 / 0) calc(var(--gutter) + var(--panel-w) + 40px));
+  background: var(--scrim);
+}
+.tower-scrim[data-side="right"] { --scrim-dir: 270deg; }
+.tower-scrim.is-on { opacity: 1; }
+.glass-btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: clamp(14px, 1.05vw, 20px);
+  border-radius: var(--radius-pill);
+  background: rgb(255 255 255 / 0.1); border: 1px solid rgb(255 255 255 / 0.1);
+  -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px);
+  color: var(--white); font-size: clamp(15px, 0.94vw, 18px); font-weight: 500; line-height: 1;
+  transition: background-color var(--dur-fast);
+}
+.glass-btn:hover { background: rgb(255 255 255 / 0.18); }
+.glass-btn svg { width: 17px; height: 8px; flex: none; }
+/* Show / hide filters: the box fades away so the tower view is clear; the count badge
+   keeps active filters visible while it is hidden. */
+.tower-panel__filters-icon { width: 18px !important; height: 14px !important; }
+.filter-box {
+  transition: opacity 320ms var(--ease-out), transform 320ms var(--ease-out), visibility 0s;
+}
+@media (min-width: 768px) {
+  .tower-panel.is-collapsed .filter-box {
+    opacity: 0; transform: translateY(-12px); visibility: hidden; pointer-events: none;
+    transition: opacity 260ms var(--ease-out), transform 260ms var(--ease-out), visibility 0s 260ms;
+  }
+}
+.filter-count {
+  display: inline-grid; place-items: center; min-width: 20px; height: 20px; padding: 0 6px;
+  border-radius: 10px; background: linear-gradient(180deg, #eed499, #d48128); color: var(--gray-950); font-size: 12px; font-weight: 600;
+}
+
+.tower-panel__title {
+  display: flex; align-items: center; gap: clamp(14px, 1.3vw, 25px);
+  font-size: clamp(48px, 4.17vw, 80px); white-space: nowrap; padding-bottom: 0.08em;
+}
+.tower-panel__divider {
+  width: 2px; height: 1em; flex: none;
+  background: linear-gradient(180deg, #eed499, #f7eace); opacity: 0.2;
+}
+
+/* Filter Container: white 10% + 15 px blur, radius 30, padding 50 */
+.filter-box {
+  width: 100%;
+  display: flex; flex-direction: column; gap: clamp(16px, 1.56vw, 30px);
+  padding: clamp(24px, 2.6vw, 50px);
+  border-radius: 30px;
+  background: rgb(255 255 255 / 0.1);
+  -webkit-backdrop-filter: blur(15px); backdrop-filter: blur(15px);
+}
+.filter-box__sheet-head { display: none; }
+.filter-box__rows { display: flex; flex-direction: column; gap: clamp(14px, 1.56vw, 30px); }
+.filter-row { display: flex; align-items: center; gap: clamp(16px, 1.56vw, 30px); }
+.filter-row__label {
+  width: clamp(76px, 5.2vw, 100px); flex: none;
+  font-size: clamp(16px, 1.04vw, 20px); font-weight: 500; line-height: 1.5; color: var(--white);
+}
+.filter-row__label sup { font-size: 0.65em; }
+
+/* Range (Price / Area): black 40%, radius 30, padding 20 / 40, two gold pill thumbs */
+.range {
+  --thumb-w: 40px;
+  flex: 1; min-width: 0;
+  display: flex; flex-direction: column; gap: clamp(16px, 1.56vw, 30px);
+  padding: clamp(14px, 1.05vw, 20px) clamp(20px, 2.1vw, 40px);
+  border-radius: 30px; background: rgb(0 0 0 / 0.4);
+}
+.range__values { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; white-space: nowrap; }
+.range__values small { font-size: 12px; color: rgb(255 255 255 / 0.6); }
+.range__values output { font-size: clamp(16px, 1.04vw, 20px); font-weight: 500; }
+.range__track { position: relative; height: 12px; }
+.range__track::before, .range__track::after { content: ""; position: absolute; pointer-events: none; }
+.range__track::before { left: 0; right: 0; top: 5px; height: 2px; border-radius: 2px; background: rgb(255 255 255 / 0.2); }
+.range__track::after {
+  top: 4px; height: 4px; border-radius: 4px;
+  left: calc(var(--thumb-w) / 2 + (100% - var(--thumb-w)) * var(--lo));
+  right: calc(var(--thumb-w) / 2 + (100% - var(--thumb-w)) * (1 - var(--hi)));
+  background: linear-gradient(180deg, #eed499, #d48128);
+}
+.range input {
+  position: absolute; inset: 0; width: 100%; height: 12px; margin: 0;
+  background: none; pointer-events: none;
+  -webkit-appearance: none; appearance: none;
+}
+.range input::-webkit-slider-runnable-track { height: 12px; background: transparent; }
+.range input::-moz-range-track { height: 12px; background: transparent; }
+.range input::-webkit-slider-thumb {
+  -webkit-appearance: none; pointer-events: auto;
+  width: var(--thumb-w); height: 12px; border: 0; border-radius: 99px;
+  background: linear-gradient(180deg, #eed499, #d48128);
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.35); cursor: grab;
+}
+.range input::-moz-range-thumb {
+  pointer-events: auto;
+  width: var(--thumb-w); height: 12px; border: 0; border-radius: 99px;
+  background: linear-gradient(180deg, #eed499, #d48128);
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.35); cursor: grab;
+}
+.range input:active::-webkit-slider-thumb { cursor: grabbing; }
+.range input:focus-visible { outline: none; }
+.range input:focus-visible::-webkit-slider-thumb { outline: 2px solid var(--white); outline-offset: 3px; }
+.range input:focus-visible::-moz-range-thumb { outline: 2px solid var(--white); outline-offset: 3px; }
+
+/* Rooms: black 40% tiles, 96 tall, radius 30, gap 5 */
+.rooms { flex: 1; min-width: 0; display: flex; gap: 5px; }
+.rooms__option {
+  flex: 1; min-width: 0; height: clamp(60px, 5vw, 96px);
+  display: grid; place-items: center; padding: 0 6px;
+  border: 1px solid transparent; border-radius: clamp(20px, 1.56vw, 30px);
+  background: rgb(0 0 0 / 0.4);
+  font-size: clamp(16px, 1.04vw, 20px); font-weight: 500;
+  transition: background-color var(--dur-fast), border-color var(--dur-fast);
+}
+.rooms__option:hover { background: rgb(0 0 0 / 0.55); }
+.rooms__option[aria-pressed="true"] { border-color: #e5b864; background: linear-gradient(180deg, rgb(238 212 153 / 0.22), rgb(212 129 40 / 0.22)); }
+.rooms__option[data-room="STUDIO"] { font-size: clamp(13px, 0.78vw, 15px); }
+
+.filter-box__foot {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding-top: clamp(12px, 1.05vw, 20px); border-top: 1px solid rgb(255 255 255 / 0.12);
+  font-size: clamp(13px, 0.78vw, 15px); color: rgb(255 255 255 / 0.8);
+}
+.filter-box__result strong { color: #eed499; font-weight: 600; }
+.filter-box__legend { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: -8px; font-size: 13px; color: rgb(255 255 255 / 0.7); }
+.filter-box__legend li { display: flex; align-items: center; gap: 6px; }
+
+.link-btn { border: 0; background: none; padding: 6px 0; color: #eed499; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.link-btn:disabled { color: rgb(255 255 255 / 0.35); text-decoration: none; cursor: default; }
+
+.status-dot { width: 10px; height: 10px; flex: none; border-radius: 50%; border: 1px solid rgb(255 255 255 / 0.6); }
+.status-dot--available { background: var(--status-available); }
+.status-dot--reserved { background: var(--status-reserved); }
+.status-dot--sold { background: var(--status-sold); }
+
+/* ---------- Short screens: tighten the panel ---------- */
+@media (max-height: 820px) and (min-width: 768px) {
+  .tower-panel { --panel-gap: 20px; }
+  .tower-panel__title { font-size: clamp(40px, 3.4vw, 64px); }
+  .filter-box { gap: 14px; padding: 22px; }
+  .filter-box__rows { gap: 12px; }
+  .range { gap: 12px; padding: 12px 20px; }
+  .rooms__option { height: 56px; }
+}
+
+/* ---------- Mobile: title row at the top, filters as a bottom sheet ---------- */
+@media (max-width: 767px) {
+  .k0-title { top: calc(var(--top-offset) + 64px); width: calc(100% - 32px); }
+  .k0-title__title { font-size: 40px; white-space: normal; }
+  .crumbs { letter-spacing: 1.5px; font-size: 10px; gap: 8px; }
+  .crumbs i { height: 9px; width: 2px; }
+
+  .tower-panel, .tower-panel[data-side="right"] {
+    left: 12px; right: 12px; width: auto; top: max(12px, env(safe-area-inset-top));
+    gap: 12px; transform: none;
+  }
+  .tower-panel__nav { gap: 8px; }
+  .tower-panel[data-side="right"] .tower-panel__nav { flex-direction: row; }
+  .tower-panel[data-side="right"] .tower-switch { margin-left: auto; margin-right: 0; }
+  .tower-panel[data-side="right"] { align-items: flex-start; }
+  .tower-switch { padding: 12px 14px; font-size: 14px; }
+  .tower-scrim, .tower-scrim[data-side="right"] { background: linear-gradient(180deg, rgb(7 10 13 / 0.78), rgb(7 10 13 / 0) 200px); }
+  .glass-btn { padding: 12px 14px; font-size: 14px; background: rgb(7 10 13 / 0.45); }
+  .tower-panel__filters-btn { margin-left: 0; }
+  .tower-panel__filters-icon { display: none; }
+  .tower-panel__title { font-size: 36px; gap: 12px; }
+
+  .filter-box {
+    position: fixed; z-index: 30; left: 0; right: 0; bottom: 0; width: 100%;
+    max-height: 82svh; overflow-y: auto; overscroll-behavior: contain;
+    padding: 24px 16px max(20px, env(safe-area-inset-bottom));
+    border-radius: 24px 24px 0 0;
+    background: rgb(7 10 13 / 0.92);
+    visibility: hidden; transform: translateY(100%);
+    transition: transform var(--dur-slow) var(--ease-out), visibility 0s var(--dur-slow);
+  }
+  .filter-box.is-open { visibility: visible; transform: none; transition: transform var(--dur-slow) var(--ease-out), visibility 0s; }
+  .filter-box__sheet-head { display: flex; align-items: center; justify-content: space-between; }
+  .filter-box__sheet-head .gold-title { font-size: 34px; }
+  .filter-row { flex-direction: column; align-items: stretch; gap: 8px; }
+  .filter-row__label { width: auto; font-size: 15px; }
+  .rooms__option { height: 52px; border-radius: 18px; }
+}
+@media (min-width: 768px) {
+  .filter-box[hidden] { display: flex !important; }
+}

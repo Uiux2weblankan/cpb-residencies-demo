@@ -1,0 +1,44 @@
+[
+  {
+    "view": "K0",
+    "name": "Overview",
+    "light": "Dusk",
+    "source": "Shot 01 K0 → A1 — 1.jpg"
+  },
+  {
+    "view": "A1",
+    "name": "Park ¾",
+    "light": "Night",
+    "source": "Image · A1 · Park ¾ · Night.png"
+  },
+  {
+    "view": "A2",
+    "name": "West flank",
+    "light": "Night",
+    "source": "Image · A2 · West flank · Night.png"
+  },
+  {
+    "view": "A3",
+    "name": "Street front",
+    "light": "Night",
+    "source": "Image · A3 · Street front · Night.png"
+  },
+  {
+    "view": "B1",
+    "name": "Park ¾",
+    "light": "Night",
+    "source": "Image · B1 · Park ¾ · Night.png"
+  },
+  {
+    "view": "B2",
+    "name": "East flank",
+    "light": "Night",
+    "source": "Image · B2 · East flank · Night.png"
+  },
+  {
+    "view": "B3",
+    "name": "Street front",
+    "light": "Night",
+    "source": "Image · B3 · Street front · Night.png"
+  }
+]

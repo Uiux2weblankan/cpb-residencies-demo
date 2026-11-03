@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Check Availability · Central Park Boulevard, Port City Colombo</title>
+  <meta name="description" content="Choose a tower, explore it floor by floor and check the type, size, price and availability of every residence.">
+  <meta name="theme-color" content="#011810">
+  <link rel="icon" href="public/img/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Italiana&display=swap">
+
+  <link rel="preload" href="public/manifest.json" as="fetch" crossorigin>
+  <link rel="preload" href="public/data/units.json" as="fetch" crossorigin>
+
+  <link rel="stylesheet" href="src/css/tokens.css">
+  <link rel="stylesheet" href="src/css/base.css">
+  <link rel="stylesheet" href="src/css/header.css">
+  <link rel="stylesheet" href="src/css/viewer.css">
+  <link rel="stylesheet" href="src/css/availability.css">
+  <link rel="stylesheet" href="src/css/cards.css">
+  <script type="module" src="src/js/main.js"></script>
+</head>
+<!-- 2.1 Residencies Check Availability (overview, K0) · 2.1.1 Tower Check Availability (tower views) -->
+<body class="page page--availability">
+  <a class="skip-link" href="#viewer">Skip to the residences viewer</a>
+
+  <!-- Site header (Figma: Navigation / With_Banner) -->
+  <header class="site-header" data-site-header>
+    <a class="btn btn--glass site-header__booking" href="contact.html?intent=booking">
+      <span class="btn__dot" aria-hidden="true"></span>Plan Your Booking
+    </a>
+    <a class="site-header__logo" href="index.html" aria-label="Central Park Boulevard, Port City: Residencies">
+      <img src="public/img/logo.png" alt="" width="200" height="202">
+    </a>
+    <div class="site-header__right">
+      <a class="site-header__phone" href="tel:+94112098765">
+        <img src="public/img/icon-phone.svg" alt="" width="25" height="22">
+        <span>+94 112 098 765</span>
+      </a>
+      <button class="btn btn--glass site-header__menu" type="button" aria-expanded="false" aria-controls="site-menu" data-menu-toggle>
+        <span class="site-header__menu-label">Menu</span>
+        <img src="public/img/icon-hamburger.svg" alt="" width="33" height="12">
+      </button>
+    </div>
+  </header>
+
+  <nav class="site-menu" id="site-menu" aria-label="Main" hidden data-site-menu>
+    <div class="site-menu__inner">
+      <ul class="site-menu__primary">
+        <li><span class="site-menu__muted">Home</span></li>
+        <li><a href="index.html" aria-current="page">Residences</a></li>
+        <li><span class="site-menu__muted">Project Progress</span></li>
+        <li><span class="site-menu__muted">About Port City</span></li>
+        <li><span class="site-menu__muted">Lifestyle &amp; Amenities</span></li>
+        <li><span class="site-menu__muted">Why Invest in Sri Lanka</span></li>
+      </ul>
+      <ul class="site-menu__secondary">
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><span class="site-menu__muted">Gallery</span></li>
+        <li><span class="site-menu__muted">Frequently Asked Questions</span></li>
+      </ul>
+      <p class="site-menu__note">Greyed-out pages are outside this demo.</p>
+    </div>
+  </nav>
+
+  <main class="viewer" id="viewer" aria-label="Check availability" data-viewer data-view="K0" data-state="loading">
+    <div class="viewer__stage" data-stage>
+      <canvas class="viewer__canvas" data-canvas aria-hidden="true"></canvas>
+      <div class="viewer__shade" aria-hidden="true"></div>
+      <div class="viewer__layer viewer__layer--towers" data-tower-layer></div>
+      <div class="viewer__layer viewer__layer--overlay" data-overlay-layer></div>
+    </div>
+
+    <!-- 2.1 › Header Section: breadcrumb + page title -->
+    <header class="k0-title" data-k0-title>
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <span>Home</span><i aria-hidden="true"></i><span>Residences</span><i aria-hidden="true"></i><strong aria-current="page">Check Availability</strong>
+      </nav>
+      <h1 class="gold-title k0-title__title">Find Your Residence</h1>
+    </header>
+
+    <!-- Legibility scrim on the panel side (gray-950 gradient, as the 2.1.1 image treatment) -->
+    <div class="tower-scrim" data-tower-scrim aria-hidden="true"></div>
+
+    <!-- 2.1.1 › Container: Back, "Tower A | Availability", Filter Container -->
+    <section class="tower-panel" data-tower-panel data-side="left" hidden aria-labelledby="tower-panel-title">
+      <div class="tower-panel__nav">
+        <button class="glass-btn" type="button" data-action="overview">
+          <svg viewBox="0 0 17 8" aria-hidden="true"><path d="M16 4H1.5M4.5 0.8L1.2 4l3.3 3.2" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+          <span>Back</span>
+        </button>
+
+        <button class="glass-btn tower-panel__filters-btn" type="button" data-action="filters" aria-expanded="true" aria-controls="filter-box">
+          <svg class="tower-panel__filters-icon" viewBox="0 0 18 14" aria-hidden="true"><path d="M1 3h16M1 11h16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><circle cx="6" cy="3" r="2.2" fill="#070a0d" stroke="currentColor" stroke-width="1.3"/><circle cx="12" cy="11" r="2.2" fill="#070a0d" stroke="currentColor" stroke-width="1.3"/></svg>
+          <span data-filters-label>Hide filters</span><span class="filter-count" data-filter-count hidden></span>
+        </button>
+        <!-- Switch tower: Figma Primary_Button, the same pill as "Tower A / Tower B" on the overview -->
+        <button class="tower-switch" type="button" data-action="switch-tower">
+          <span class="btn__dot btn__dot--green" aria-hidden="true"></span><span data-switch-label>Tower B</span>
+        </button>
+      </div>
+      <h1 class="gold-title tower-panel__title" id="tower-panel-title">
+        <span data-tower-name>Tower A</span><i class="tower-panel__divider" aria-hidden="true"></i><span>Availability</span>
+      </h1>
+      <div class="filter-box" id="filter-box" data-filter-box role="group" aria-label="Filter residences">
+        <div class="filter-box__sheet-head">
+          <h2 class="gold-title">Filters</h2>
+          <button class="card-close" type="button" data-close-sheet aria-label="Close filters">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+        </div>
+        <div class="filter-box__rows" data-rows></div>
+        <div class="filter-box__foot">
+          <p class="filter-box__result" data-result aria-live="polite"></p>
+          <button class="link-btn" type="button" data-clear>Clear</button>
+        </div>
+        <ul class="filter-box__legend" data-legend aria-label="Status colours"></ul>
+      </div>
+    </section>
+
+    <div class="viewer__loader" data-loader role="status">
+      <span class="viewer__loader-ring" aria-hidden="true"></span>
+      <span class="viewer__loader-text" data-loader-text>Loading the residences…</span>
+    </div>
+
+    <aside class="tower-card" data-tower-card hidden aria-live="polite"></aside>
+    <aside class="floor-card" data-floor-card hidden role="dialog" aria-modal="false" aria-labelledby="floor-card-title"></aside>
+    <div class="sheet-backdrop" data-sheet-backdrop hidden></div>
+
+    <!-- Action Container: "Select Your Tower" on 2.1, view navigation around the tower on 2.1.1 -->
+    <div class="viewer__controls" data-controls>
+      <div class="action-bar" data-action-bar>
+        <button class="action-bar__arrow" type="button" data-action="prev" aria-label="Previous view" hidden>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+        </button>
+        <div class="action-bar__title">
+          <svg class="action-bar__rule" viewBox="0 0 9 40" aria-hidden="true">
+            <defs><linearGradient id="chevron-fade" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#fffdf7" stop-opacity="0"/><stop offset="0.5" stop-color="#fffdf7"/><stop offset="1" stop-color="#fffdf7" stop-opacity="0"/>
+            </linearGradient></defs>
+            <path d="M8.5 0L0.5 20L8.5 40" fill="none" stroke="url(#chevron-fade)"/>
+          </svg>
+          <span class="action-bar__text" data-view-title aria-live="polite">Select Your Tower</span>
+          <svg class="action-bar__rule" viewBox="0 0 9 40" aria-hidden="true">
+            <path d="M0.5 0L8.5 20L0.5 40" fill="none" stroke="url(#chevron-fade)"/>
+          </svg>
+        </div>
+        <ol class="action-bar__dots" data-view-dots hidden></ol>
+        <button class="action-bar__arrow" type="button" data-action="next" aria-label="Next view" hidden>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <p class="viewer__hint" data-hint aria-hidden="true"></p>
+    <div class="visually-hidden" aria-live="polite" data-announcer></div>
+  </main>
+</body>
+</html>

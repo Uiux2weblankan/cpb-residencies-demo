@@ -1,0 +1,123 @@
+/* Hover Floor Card and Hover Tower Card (Figma: _Residences Animation).
+   Desktop: floating card. Mobile: bottom sheet. */
+
+.floor-card, .tower-card {
+  --card-pad: clamp(28px, 3.1vw, 60px);
+  position: absolute; z-index: 20;
+  width: clamp(320px, 23.2vw, 446px);
+  padding: var(--card-pad);
+  border-radius: var(--radius-card);
+  background: var(--gold-50);
+  color: var(--gray-800);
+  box-shadow: var(--shadow-card);
+  opacity: 0; transform: translateY(8px) scale(0.98);
+  transition: opacity var(--dur-base) var(--ease-out), transform var(--dur-base) var(--ease-out);
+}
+.floor-card.is-open, .tower-card.is-open { opacity: 1; transform: none; }
+
+/* Pointer arrow (Figma: Arrow, 20×24 at top 30px on the card edge) */
+.floor-card::before {
+  content: ""; position: absolute; top: var(--arrow-y, 40px); width: 20px; height: 24px;
+  background: var(--gold-50);
+  clip-path: polygon(100% 0, 100% 100%, 0 50%);
+  left: -19px; transform: translateY(-50%);
+}
+.floor-card[data-side="left"]::before { left: auto; right: -19px; clip-path: polygon(0 0, 100% 50%, 0 100%); }
+
+.card-close {
+  position: absolute; top: 14px; right: 14px;
+  display: grid; place-items: center; width: 40px; height: 40px;
+  border: 1px solid var(--gold-600-20); border-radius: 50%; background: var(--white); color: var(--gray-900);
+}
+.card-close .icon { width: 16px; height: 16px; }
+.card-close:hover { background: var(--gold-100); }
+
+.floor-card__body { display: flex; flex-direction: column; gap: clamp(18px, 1.6vw, 30px); }
+.floor-card__eyebrow { font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold-600); margin-bottom: -10px; }
+.floor-card__header { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.floor-card__title { font-size: clamp(32px, 2.1vw, 40px); }
+.floor-card.is-pinned .floor-card__header, .floor-card.is-sheet .floor-card__header { padding-right: 44px; }
+
+.options {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  padding: 16px 20px;
+  background: var(--gold-600-10); border: 1px solid var(--gold-600-10);
+  color: var(--gold-600); font-size: clamp(15px, 1vw, 19px); font-weight: 600; line-height: 1.3;
+}
+.options > span { white-space: nowrap; }
+.options__label { text-transform: capitalize; font-weight: 600; }
+.options__divider { width: 1px; height: 14px; background: var(--gold-600-20); flex: none; }
+.options--wrap { flex-wrap: wrap; justify-content: flex-start; row-gap: 6px; }
+
+.floor-card__plan {
+  position: relative; margin: 0; overflow: hidden;
+  height: clamp(130px, calc(100svh - 620px), 287px);
+  background: linear-gradient(180deg, var(--green-900), var(--green-950));
+}
+.floor-card__plan img { width: 100%; height: 100%; object-fit: contain; }
+.floor-card__plan-overlay {
+  position: absolute; inset: 0; display: grid; place-items: center;
+  background: var(--gray-950-60); opacity: 0;
+  transition: opacity var(--dur-base) var(--ease-out);
+}
+.floor-card__plan:hover .floor-card__plan-overlay,
+.floor-card__plan:focus-within .floor-card__plan-overlay { opacity: 1; }
+.floor-card__plan figcaption {
+  position: absolute; left: 10px; bottom: 8px; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: rgb(247 234 206 / 0.7);
+}
+@media (hover: none) {
+  .floor-card__plan-overlay { opacity: 1; background: linear-gradient(0deg, var(--gray-950-60), transparent 60%); place-items: end center; padding-bottom: 28px; }
+}
+
+/* Hover Tower Card: positioned by JS from the Figma frame (A: left 100, B: right 1820, top 431).
+   Figma's hidden state sits 40 px lower at opacity 0, so the card rises in. */
+.tower-card {
+  width: clamp(280px, 23.23vw, 446px);
+  transform: translateY(var(--rise, 40px));
+  transition: opacity var(--k0-dur, 450ms) var(--ease-out), transform var(--k0-dur, 450ms) var(--ease-out);
+}
+.tower-card.is-open { transform: none; }
+.tower-card__header {
+  display: flex; align-items: flex-start; justify-content: space-between;
+  padding-bottom: clamp(20px, 1.6vw, 30px); border-bottom: 1px solid rgb(152 165 179 / 0.4);
+  color: var(--green-900);
+}
+.tower-card__count { font-size: clamp(60px, 4.2vw, 80px); line-height: 0.8; }
+.tower-card__info { display: grid; justify-items: end; gap: 10px; }
+.tower-card__apartments { font-size: clamp(30px, 2.1vw, 40px); line-height: 0.8; }
+.tower-card__available { font-size: clamp(16px, 1vw, 19px); }
+.tower-card__body { display: grid; gap: clamp(18px, 1.6vw, 30px); margin-top: clamp(18px, 1.6vw, 30px); }
+.tower-card__info-group { display: grid; gap: clamp(12px, 1.05vw, 20px); }
+.tower-card__kicker { font-size: clamp(15px, 0.89vw, 17px); color: var(--gray-800); text-transform: capitalize; }
+.tower-card .options { padding: clamp(14px, 1.05vw, 20px); font-size: clamp(14px, 0.99vw, 19px); }
+.tower-card .options > span:last-child { text-transform: capitalize; }
+
+/* Mobile: both cards become bottom sheets. */
+.sheet-backdrop {
+  position: fixed; inset: 0; z-index: 19; background: rgb(7 10 13 / 0.35);
+  opacity: 0; transition: opacity var(--dur-base);
+}
+.sheet-backdrop.is-open { opacity: 1; }
+
+@media (max-width: 767px) {
+  .floor-card, .tower-card {
+    position: fixed; left: 0; right: 0; bottom: 0; top: auto;
+    width: 100%; max-height: 86svh; overflow-y: auto; overscroll-behavior: contain;
+    padding: 34px 20px max(24px, env(safe-area-inset-bottom));
+    border-radius: 24px 24px 0 0;
+    transform: translateY(100%);
+    transition: transform var(--dur-slow) var(--ease-out), opacity var(--dur-fast);
+  }
+  .floor-card.is-open, .tower-card.is-open { transform: none; }
+  .tower-card, .tower-card[style] { left: 0 !important; right: 0; top: auto !important; width: 100%; }
+  .floor-card::before { display: none; }
+  .floor-card::after, .tower-card::after {
+    content: ""; position: absolute; top: 10px; left: 50%; width: 44px; height: 4px; margin-left: -22px;
+    border-radius: 2px; background: rgb(33 37 41 / 0.2);
+  }
+  .floor-card__body { gap: 18px; }
+  .floor-card__plan { height: clamp(140px, 30svh, 287px); }
+  .tower-card__header { padding-bottom: 18px; padding-right: 48px; gap: 12px; }
+}
+
+.floor-card__meta { margin-top: 10px; font-size: 14px; color: var(--gray-500); }

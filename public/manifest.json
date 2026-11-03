@@ -1,0 +1,417 @@
+{
+  "version": "v1",
+  "generated": "2026-11-03T08:22:04.486Z",
+  "stage": {
+    "width": 1920,
+    "height": 1080
+  },
+  "fps": 30,
+  "formats": {
+    "still": [
+      "avif",
+      "jpg"
+    ],
+    "frame": [
+      "avif",
+      "jpg"
+    ]
+  },
+  "statusColours": {
+    "available": "#033825",
+    "reserved": "#E8CE06",
+    "sold": "#F7431A"
+  },
+  "loops": {
+    "A": [
+      "A1",
+      "A2",
+      "A3"
+    ],
+    "B": [
+      "B1",
+      "B2",
+      "B3"
+    ]
+  },
+  "views": [
+    {
+      "id": "K0",
+      "tower": null,
+      "name": "Overview",
+      "still": "stills/k0",
+      "overlay": null,
+      "focal": [
+        968,
+        680
+      ],
+      "towers": {
+        "A": {
+          "label": "Tower A",
+          "window": [
+            [
+              720,
+              434
+            ],
+            [
+              958,
+              434
+            ],
+            [
+              958,
+              906
+            ],
+            [
+              664,
+              906
+            ],
+            [
+              664,
+              830
+            ]
+          ],
+          "roof": [
+            [
+              727,
+              446
+            ],
+            [
+              800,
+              443
+            ],
+            [
+              862,
+              458
+            ],
+            [
+              941,
+              461
+            ],
+            [
+              941,
+              790
+            ],
+            [
+              968,
+              800
+            ],
+            [
+              968,
+              900
+            ],
+            [
+              677,
+              897
+            ],
+            [
+              675,
+              827
+            ],
+            [
+              683,
+              827
+            ]
+          ],
+          "labelAnchor": [
+            688,
+            590
+          ],
+          "labelSide": "left",
+          "card": {
+            "left": 100,
+            "top": 431
+          }
+        },
+        "B": {
+          "label": "Tower B",
+          "window": [
+            [
+              986,
+              434
+            ],
+            [
+              1204,
+              434
+            ],
+            [
+              1242,
+              826
+            ],
+            [
+              1242,
+              920
+            ],
+            [
+              986,
+              906
+            ]
+          ],
+          "roof": [
+            [
+              1003,
+              459
+            ],
+            [
+              1073,
+              457
+            ],
+            [
+              1107,
+              445
+            ],
+            [
+              1193,
+              446
+            ],
+            [
+              1227,
+              827
+            ],
+            [
+              1230,
+              840
+            ],
+            [
+              1230,
+              917
+            ],
+            [
+              968,
+              900
+            ],
+            [
+              968,
+              800
+            ],
+            [
+              1003,
+              790
+            ]
+          ],
+          "labelAnchor": [
+            1225,
+            590
+          ],
+          "labelSide": "right",
+          "card": {
+            "right": 1820,
+            "top": 431
+          }
+        }
+      }
+    },
+    {
+      "id": "A1",
+      "tower": "A",
+      "name": "Park ¾",
+      "still": "stills/a1",
+      "overlay": "overlays/a1.svg",
+      "units": 168,
+      "bounds": [
+        862,
+        266,
+        1359.5,
+        919
+      ],
+      "focal": [
+        1110.8,
+        592.5
+      ]
+    },
+    {
+      "id": "A2",
+      "tower": "A",
+      "name": "West flank",
+      "still": "stills/a2",
+      "overlay": "overlays/a2.svg",
+      "units": 154,
+      "bounds": [
+        763.5,
+        171,
+        1259.5,
+        858
+      ],
+      "focal": [
+        1011.5,
+        514.5
+      ]
+    },
+    {
+      "id": "A3",
+      "tower": "A",
+      "name": "Street front",
+      "still": "stills/a3",
+      "overlay": "overlays/a3.svg",
+      "units": 174,
+      "bounds": [
+        990.5,
+        96.5,
+        1334.5,
+        767
+      ],
+      "focal": [
+        1162.5,
+        431.8
+      ]
+    },
+    {
+      "id": "B1",
+      "tower": "B",
+      "name": "Park ¾",
+      "still": "stills/b1",
+      "overlay": "overlays/b1.svg",
+      "units": 169,
+      "bounds": [
+        592,
+        183.5,
+        1041,
+        827
+      ],
+      "focal": [
+        816.5,
+        505.3
+      ]
+    },
+    {
+      "id": "B2",
+      "tower": "B",
+      "name": "East flank",
+      "still": "stills/b2",
+      "overlay": "overlays/b2.svg",
+      "units": 131,
+      "bounds": [
+        713,
+        132,
+        1227.5,
+        816.5
+      ],
+      "focal": [
+        970.3,
+        474.3
+      ]
+    },
+    {
+      "id": "B3",
+      "tower": "B",
+      "name": "Street front",
+      "still": "stills/b3",
+      "overlay": "overlays/b3.svg",
+      "units": 174,
+      "bounds": [
+        601,
+        183,
+        937,
+        853
+      ],
+      "focal": [
+        769,
+        518
+      ]
+    }
+  ],
+  "shots": [
+    {
+      "id": "shot-01",
+      "from": "K0",
+      "to": "A1",
+      "frames": 31,
+      "width": 1920,
+      "height": 1080,
+      "path": "shots/shot-01/desktop/",
+      "formats": [
+        "avif",
+        "jpg"
+      ]
+    },
+    {
+      "id": "shot-02",
+      "from": "K0",
+      "to": "B1",
+      "frames": 31,
+      "width": 1920,
+      "height": 1080,
+      "path": "shots/shot-02/desktop/",
+      "formats": [
+        "avif",
+        "jpg"
+      ]
+    },
+    {
+      "id": "shot-03",
+      "from": "A1",
+      "to": "A2",
+      "frames": 31,
+      "width": 1920,
+      "height": 1080,
+      "path": "shots/shot-03/desktop/",
+      "formats": [
+        "avif",
+        "jpg"
+      ]
+    },
+    {
+      "id": "shot-04",
+      "from": "A2",
+      "to": "A3",
+      "frames": 31,
+      "width": 1920,
+      "height": 1080,
+      "path": "shots/shot-04/desktop/",
+      "formats": [
+        "avif",
+        "jpg"
+      ]
+    },
+    {
+      "id": "shot-05",
+      "from": "A3",
+      "to": "A1",
+      "frames": 31,
+      "width": 1920,
+      "height": 1080,
+      "path": "shots/shot-05/desktop/",
+      "formats": [
+        "avif",
+        "jpg"
+      ]
+    },
+    {
+      "id": "shot-06",
+      "from": "B1",
+      "to": "B2",
+      "frames": 31,
+      "width": 1920,
+      "height": 1080,
+      "path": "shots/shot-06/desktop/",
+      "formats": [
+        "avif",
+        "jpg"
+      ]
+    },
+    {
+      "id": "shot-07",
+      "from": "B2",
+      "to": "B3",
+      "frames": 31,
+      "width": 1920,
+      "height": 1080,
+      "path": "shots/shot-07/desktop/",
+      "formats": [
+        "avif",
+        "jpg"
+      ]
+    },
+    {
+      "id": "shot-08",
+      "from": "B3",
+      "to": "B1",
+      "frames": 31,
+      "width": 1920,
+      "height": 1080,
+      "path": "shots/shot-08/desktop/",
+      "formats": [
+        "avif",
+        "jpg"
+      ]
+    }
+  ]
+}

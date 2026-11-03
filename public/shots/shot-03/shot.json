@@ -1,0 +1,11 @@
+{
+  "id": "shot-03",
+  "from": "A1",
+  "to": "A2",
+  "frames": 31,
+  "source": {
+    "folder": "Shot 03 — A1 → A2",
+    "width": 1920,
+    "height": 1080
+  }
+}

@@ -1,0 +1,214 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" class="overlay-svg" data-view="A2">
+<g id="floor-A-35" class="floor" data-floor="35">
+<path id="A-35-U14" class="unit" data-floor="35" data-unit="U14" data-type="2BR" data-area-ft2="1220" d="M763.5 237L801.5 232V210.5L763.5 216V237Z"/>
+<path id="A-35-U11" class="unit" data-floor="35" data-unit="U11" data-type="3BR" data-area-ft2="1710" d="M801.5 232L901.5 218V196L801.5 210.5V232Z"/>
+<path id="A-35-U07" class="unit" data-floor="35" data-unit="U07" data-type="4BR" data-area-ft2="4000" d="M956 214L1105 194L1100 171L956 192V214Z"/>
+</g>
+<g id="floor-A-34" class="floor" data-floor="34">
+<path id="A-34-U14" class="unit" data-floor="34" data-unit="U14" data-type="2BR" data-area-ft2="1220" d="M763.5 258L801.5 253V232L763.5 237V258Z"/>
+<path id="A-34-U11" class="unit" data-floor="34" data-unit="U11" data-type="3BR" data-area-ft2="1710" d="M801.5 253L901.5 240V218L801.5 232V253Z"/>
+<path id="A-34-U07" class="unit" data-floor="34" data-unit="U07" data-type="4BR" data-area-ft2="4100" d="M956 236.5L1110.5 216.5L1105 194L956 214V236.5Z"/>
+</g>
+<g id="floor-A-33" class="floor" data-floor="33">
+<path id="A-33-U14" class="unit" data-floor="33" data-unit="U14" data-type="2BR" data-area-ft2="1220" d="M763.5 279L801.5 274.5V253L763.5 258V279Z"/>
+<path id="A-33-U11" class="unit" data-floor="33" data-unit="U11" data-type="3BR" data-area-ft2="1710" d="M801.5 274.5L901.5 262V240L801.5 253V274.5Z"/>
+<path id="A-33-U07" class="unit" data-floor="33" data-unit="U07" data-type="4BR" data-area-ft2="4200" d="M956 258.5L1115.5 239L1110.5 216.5L956 236.5V258.5Z"/>
+</g>
+<g id="floor-A-32" class="floor" data-floor="32">
+<path id="A-32-U14" class="unit" data-floor="32" data-unit="U14" data-type="2BR" data-area-ft2="1220" d="M763.5 300.5L801.5 296V274.5L763.5 279V300.5Z"/>
+<path id="A-32-U11" class="unit" data-floor="32" data-unit="U11" data-type="3BR" data-area-ft2="1710" d="M801.5 296L901.5 284.5V262L801.5 274.5V296Z"/>
+<path id="A-32-U07" class="unit" data-floor="32" data-unit="U07" data-type="4BR" data-area-ft2="4300" d="M956 280.5L1121 262L1115.5 239L956 258.5V280.5Z"/>
+</g>
+<g id="floor-A-31" class="floor" data-floor="31">
+<path id="A-31-U14" class="unit" data-floor="31" data-unit="U14" data-type="2BR" data-area-ft2="1220" d="M763.5 321.5L801.5 317.5V296L763.5 300.5V321.5Z"/>
+<path id="A-31-U11" class="unit" data-floor="31" data-unit="U11" data-type="3BR" data-area-ft2="1710" d="M801.5 317.5L901.5 306.5V284.5L801.5 296V317.5Z"/>
+<path id="A-31-U07" class="unit" data-floor="31" data-unit="U07" data-type="4BR" data-area-ft2="4400" d="M956 303L1126 284.5L1121 262L956 280.5V303Z"/>
+</g>
+<g id="floor-A-30" class="floor" data-floor="30">
+<path id="A-30-U14" class="unit" data-floor="30" data-unit="U14" data-type="2BR" data-area-ft2="1220" d="M763.5 342.5L801.5 338.5V317.5L763.5 321.5V342.5Z"/>
+<path id="A-30-U11" class="unit" data-floor="30" data-unit="U11" data-type="3BR" data-area-ft2="1710" d="M801.5 338.5L901.5 328.5V306.5L801.5 317.5V338.5Z"/>
+<path id="A-30-U07" class="unit" data-floor="30" data-unit="U07" data-type="4BR" data-area-ft2="4500" d="M956 324.5L1120.5 306L1131 305L1126 284.5L956 303V324.5Z"/>
+</g>
+<g id="floor-A-29" class="floor" data-floor="29">
+<path id="A-29-U14" class="unit" data-floor="29" data-unit="U14" data-type="2BR" data-area-ft2="1220" d="M763.5 363.5L801.5 360V338.5L763.5 342.5V363.5Z"/>
+<path id="A-29-U11" class="unit" data-floor="29" data-unit="U11" data-type="3BR" data-area-ft2="1710" d="M801.5 360L901.5 350.5V328.5L801.5 338.5V360Z"/>
+<path id="A-29-U08" class="unit" data-floor="29" data-unit="U08" data-type="4BR" data-area-ft2="2500" d="M956 345.5L1126 329.5L1120.5 306L956 324.5V345.5Z"/>
+<path id="A-29-U07" class="unit" data-floor="29" data-unit="U07" data-type="4BR" data-area-ft2="2690" d="M1126 329.5L1136.5 328.5L1131 305L1120.5 306L1126 329.5Z"/>
+</g>
+<g id="floor-A-28" class="floor" data-floor="28">
+<path id="A-28-U14" class="unit" data-floor="28" data-unit="U14" data-type="2BR" data-area-ft2="1220" d="M763.5 384.5L801.5 381.5V360L763.5 363.5V384.5Z"/>
+<path id="A-28-U11" class="unit" data-floor="28" data-unit="U11" data-type="3BR" data-area-ft2="1710" d="M801.5 381.5L901.5 372.5V350.5L801.5 360V381.5Z"/>
+<path id="A-28-U08" class="unit" data-floor="28" data-unit="U08" data-type="4BR" data-area-ft2="2550" d="M956 368L1131.5 352.5L1126 329.5L956 345.5V368Z"/>
+<path id="A-28-U07" class="unit" data-floor="28" data-unit="U07" data-type="4BR" data-area-ft2="2550" d="M1131.5 352.5L1142 351.5L1136.5 328.5L1126 329.5L1131.5 352.5Z"/>
+</g>
+<g id="floor-A-27" class="floor" data-floor="27">
+<path id="A-27-U14" class="unit" data-floor="27" data-unit="U14" data-type="2BR" data-area-ft2="1220" d="M763.5 405.5L801.5 402.5V381.5L763.5 384.5V405.5Z"/>
+<path id="A-27-U11" class="unit" data-floor="27" data-unit="U11" data-type="3BR" data-area-ft2="1710" d="M801.5 402.5L901.5 394.5V372.5L801.5 381.5V402.5Z"/>
+<path id="A-27-U08" class="unit" data-floor="27" data-unit="U08" data-type="4BR" data-area-ft2="2620" d="M956 390.5L1136.5 376L1131.5 352.5L956 368V390.5Z"/>
+<path id="A-27-U07" class="unit" data-floor="27" data-unit="U07" data-type="4BR" data-area-ft2="2620" d="M1136.5 376L1147 375L1142 351.5L1131.5 352.5L1136.5 376Z"/>
+</g>
+<g id="floor-A-26" class="floor" data-floor="26">
+<path id="A-26-U14" class="unit" data-floor="26" data-unit="U14" data-type="2BR" data-area-ft2="1220" d="M763.5 427L801.5 424.5V402.5L763.5 405.5V427Z"/>
+<path id="A-26-U11" class="unit" data-floor="26" data-unit="U11" data-type="3BR" data-area-ft2="1710" d="M801.5 424.5L863.5 420.5L901.5 418V394.5L801.5 402.5V424.5Z"/>
+<path id="A-26-U08" class="unit" data-floor="26" data-unit="U08" data-type="4BR" data-area-ft2="2660" d="M956 413L1026.5 408L1142 399L1136.5 376L956 390.5V413Z"/>
+<path id="A-26-U07" class="unit" data-floor="26" data-unit="U07" data-type="4BR" data-area-ft2="2660" d="M1142 399L1152.5 398.5L1147 375L1136.5 376L1142 399Z"/>
+</g>
+<g id="floor-A-25" class="floor" data-floor="25">
+<path id="A-25-U14" class="unit" data-floor="25" data-unit="U14" data-type="2BR" data-area-ft2="1220" d="M763.5 448.5L801.5 446V424.5L763.5 427V448.5Z"/>
+<path id="A-25-U12" class="unit" data-floor="25" data-unit="U12" data-type="2BR" data-area-ft2="1135" d="M801.5 446L863.5 442V420.5L801.5 424.5V446Z"/>
+<path id="A-25-U09" class="unit" data-floor="25" data-unit="U09" data-type="1BR" data-area-ft2="815" d="M956 435.5L1031.5 429.5L1026.5 408L956 413V435.5Z"/>
+<path id="A-25-U08" class="unit" data-floor="25" data-unit="U08" data-type="3BR" data-area-ft2="1870" data-note="outline from nearest floor" d="M1031.5 429.5L1147 420.5L1142 399L1026.5 408L1031.5 429.5Z"/>
+<path id="A-25-U07" class="unit" data-floor="25" data-unit="U07" data-type="3BR" data-area-ft2="1870" data-note="outline from nearest floor" d="M1147 420.5L1157.5 420L1152.5 398.5L1142 399L1147 420.5Z"/>
+</g>
+<g id="floor-A-24" class="floor" data-floor="24">
+<path id="A-24-U14" class="unit" data-floor="24" data-unit="U14" data-type="2BR" data-area-ft2="1220" d="M763.5 469L801.5 467V446L763.5 448.5V469Z"/>
+<path id="A-24-U12" class="unit" data-floor="24" data-unit="U12" data-type="2BR" data-area-ft2="1135" d="M801.5 467L863.5 463V442L801.5 446V467Z"/>
+<path id="A-24-U11" class="unit" data-floor="24" data-unit="U11" data-type="1BR" data-area-ft2="680" d="M863.5 463L901.5 460.5V439.5L863.5 442V463Z"/>
+<path id="A-24-U09" class="unit" data-floor="24" data-unit="U09" data-type="2BR" data-area-ft2="880" d="M956 458L1036.5 452L1031.5 429.5L956 435.5V458Z"/>
+<path id="A-24-U08" class="unit" data-floor="24" data-unit="U08" data-type="3BR" data-area-ft2="1870" data-note="outline from nearest floor" d="M1036.5 452L1152.5 443.5L1147 420.5L1031.5 429.5L1036.5 452Z"/>
+<path id="A-24-U07" class="unit" data-floor="24" data-unit="U07" data-type="3BR" data-area-ft2="1870" data-note="outline from nearest floor" d="M1152.5 443.5L1163 443L1157.5 420L1147 420.5L1152.5 443.5Z"/>
+</g>
+<g id="floor-A-23" class="floor" data-floor="23">
+<path id="A-23-U14" class="unit" data-floor="23" data-unit="U14" data-type="2BR" data-area-ft2="1220" d="M763.5 490.5L801.5 488V467L763.5 469V490.5Z"/>
+<path id="A-23-U12" class="unit" data-floor="23" data-unit="U12" data-type="2BR" data-area-ft2="1135" d="M801.5 488L863.5 484.5V463L801.5 467V488Z"/>
+<path id="A-23-U11" class="unit" data-floor="23" data-unit="U11" data-type="1BR" data-area-ft2="680" d="M863.5 484.5L901.5 482.5V460.5L863.5 463V484.5Z"/>
+<path id="A-23-U09" class="unit" data-floor="23" data-unit="U09" data-type="2BR" data-area-ft2="925" d="M956 480.5L1041.5 476L1036.5 452L956 458V480.5Z"/>
+<path id="A-23-U08" class="unit" data-floor="23" data-unit="U08" data-type="3BR" data-area-ft2="1870" d="M1041.5 476L1158.5 469.5L1152.5 443.5L1036.5 452L1041.5 476Z"/>
+<path id="A-23-U07" class="unit" data-floor="23" data-unit="U07" data-type="3BR" data-area-ft2="1870" d="M1158.5 469.5L1169 469L1163 443L1152.5 443.5L1158.5 469.5Z"/>
+</g>
+<g id="floor-A-22" class="floor" data-floor="22">
+<path id="A-22-U14" class="unit" data-floor="22" data-unit="U14" data-type="2BR" data-area-ft2="1220" d="M763.5 511.5L801.5 509.5V488L763.5 490.5V511.5Z"/>
+<path id="A-22-U12" class="unit" data-floor="22" data-unit="U12" data-type="2BR" data-area-ft2="1135" d="M801.5 509.5L863.5 506.5V484.5L801.5 488V509.5Z"/>
+<path id="A-22-U11" class="unit" data-floor="22" data-unit="U11" data-type="1BR" data-area-ft2="680" d="M863.5 506.5L901.5 504.5V482.5L863.5 484.5V506.5Z"/>
+<path id="A-22-U09" class="unit" data-floor="22" data-unit="U09" data-type="2BR" data-area-ft2="980" d="M956 503L1046.5 498.5L1041.5 476L956 480.5V503Z"/>
+<path id="A-22-U08" class="unit" data-floor="22" data-unit="U08" data-type="3BR" data-area-ft2="1870" d="M1046.5 498.5L1164 493L1158.5 469.5L1041.5 476L1046.5 498.5Z"/>
+<path id="A-22-U07" class="unit" data-floor="22" data-unit="U07" data-type="3BR" data-area-ft2="1870" d="M1164 493L1174.5 492.5L1169 469L1158.5 469.5L1164 493Z"/>
+</g>
+<g id="floor-A-21" class="floor" data-floor="21">
+<path id="A-21-U14" class="unit" data-floor="21" data-unit="U14" data-type="3BR" data-area-ft2="1320" d="M763.5 532.5L801.5 531V509.5L763.5 511.5V532.5Z"/>
+<path id="A-21-U12" class="unit" data-floor="21" data-unit="U12" data-type="2BR" data-area-ft2="1135" d="M801.5 531L863.5 528.5V506.5L801.5 509.5V531Z"/>
+<path id="A-21-U11" class="unit" data-floor="21" data-unit="U11" data-type="1BR" data-area-ft2="680" d="M863.5 528.5L901.5 526.5V504.5L863.5 506.5V528.5Z"/>
+<path id="A-21-U09" class="unit" data-floor="21" data-unit="U09" data-type="2BR" data-area-ft2="1040" d="M956 525L1052 521.5L1046.5 498.5L956 503V525Z"/>
+<path id="A-21-U08" class="unit" data-floor="21" data-unit="U08" data-type="3BR" data-area-ft2="1870" d="M1052 521.5L1169.5 517L1164 493L1046.5 498.5L1052 521.5Z"/>
+<path id="A-21-U07" class="unit" data-floor="21" data-unit="U07" data-type="3BR" data-area-ft2="1870" d="M1169.5 517L1180 516.5L1174.5 492.5L1164 493L1169.5 517Z"/>
+</g>
+<g id="floor-A-20" class="floor" data-floor="20">
+<path id="A-20-U14" class="unit" data-floor="20" data-unit="U14" data-type="3BR" data-area-ft2="1320" d="M763.5 553.5L801.5 552V531L763.5 532.5V553.5Z"/>
+<path id="A-20-U12" class="unit" data-floor="20" data-unit="U12" data-type="2BR" data-area-ft2="1135" d="M801.5 552L863.5 550V528.5L801.5 531V552Z"/>
+<path id="A-20-U11" class="unit" data-floor="20" data-unit="U11" data-type="1BR" data-area-ft2="680" d="M863.5 550L901.5 549V526.5L863.5 528.5V550Z"/>
+<path id="A-20-U09" class="unit" data-floor="20" data-unit="U09" data-type="2BR" data-area-ft2="1060" d="M956 547.5L1057 544.5L1052 521.5L956 525V547.5Z"/>
+<path id="A-20-U08" class="unit" data-floor="20" data-unit="U08" data-type="3BR" data-area-ft2="1870" d="M1057 544.5L1175 541L1169.5 517L1052 521.5L1057 544.5Z"/>
+<path id="A-20-U07" class="unit" data-floor="20" data-unit="U07" data-type="3BR" data-area-ft2="1870" d="M1175 541L1185.5 540.5L1180 516.5L1169.5 517L1175 541Z"/>
+</g>
+<g id="floor-A-19" class="floor" data-floor="19">
+<path id="A-19-U14" class="unit" data-floor="19" data-unit="U14" data-type="3BR" data-area-ft2="1320" d="M763.5 574.5L801.5 573.5V552L763.5 553.5V574.5Z"/>
+<path id="A-19-U12" class="unit" data-floor="19" data-unit="U12" data-type="2BR" data-area-ft2="1135" d="M801.5 573.5L863.5 572V550L801.5 552V573.5Z"/>
+<path id="A-19-U11" class="unit" data-floor="19" data-unit="U11" data-type="1BR" data-area-ft2="680" d="M863.5 572L901.5 571V549L863.5 550V572Z"/>
+<path id="A-19-U09" class="unit" data-floor="19" data-unit="U09" data-type="2BR" data-area-ft2="1100" d="M956 570L1062 567.5L1057 544.5L956 547.5V570Z"/>
+<path id="A-19-U08" class="unit" data-floor="19" data-unit="U08" data-type="3BR" data-area-ft2="1870" d="M1062 567.5L1180.5 564.5L1175 541L1057 544.5L1062 567.5Z"/>
+<path id="A-19-U07" class="unit" data-floor="19" data-unit="U07" data-type="3BR" data-area-ft2="1870" d="M1180.5 564.5H1191.5L1185.5 540.5L1175 541L1180.5 564.5Z"/>
+</g>
+<g id="floor-A-18" class="floor" data-floor="18">
+<path id="A-18-U14" class="unit" data-floor="18" data-unit="U14" data-type="3BR" data-area-ft2="1320" d="M763.5 595.5L801.5 595V573.5L763.5 574.5V595.5Z"/>
+<path id="A-18-U12" class="unit" data-floor="18" data-unit="U12" data-type="2BR" data-area-ft2="1135" d="M801.5 595L863.5 593.5V572L801.5 573.5V595Z"/>
+<path id="A-18-U11" class="unit" data-floor="18" data-unit="U11" data-type="1BR" data-area-ft2="680" d="M863.5 593.5L901.5 593V571L863.5 572V593.5Z"/>
+<path id="A-18-U09" class="unit" data-floor="18" data-unit="U09" data-type="2BR" data-area-ft2="1140" d="M956 591H1067.5L1062 567.5L956 570V591Z"/>
+<path id="A-18-U08" class="unit" data-floor="18" data-unit="U08" data-type="3BR" data-area-ft2="1870" d="M1067.5 591H1186.5L1180.5 564.5L1062 567.5L1067.5 591Z"/>
+<path id="A-18-U07" class="unit" data-floor="18" data-unit="U07" data-type="3BR" data-area-ft2="1870" d="M1186.5 591H1197.5L1191.5 564.5H1180.5L1186.5 591Z"/>
+</g>
+<g id="floor-A-17" class="floor" data-floor="17">
+<path id="A-17-U14" class="unit" data-floor="17" data-unit="U14" data-type="3BR" data-area-ft2="1320" d="M763.5 616.5L801.5 616V595L763.5 595.5V616.5Z"/>
+<path id="A-17-U12" class="unit" data-floor="17" data-unit="U12" data-type="2BR" data-area-ft2="1135" d="M801.5 616L863.5 615.5V593.5L801.5 595V616Z"/>
+<path id="A-17-U11" class="unit" data-floor="17" data-unit="U11" data-type="1BR" data-area-ft2="680" d="M863.5 615.5L901.5 615V593L863.5 593.5V615.5Z"/>
+<path id="A-17-U09" class="unit" data-floor="17" data-unit="U09" data-type="2BR" data-area-ft2="1200" d="M956 614H1072.5L1067.5 591H956V614Z"/>
+<path id="A-17-U08" class="unit" data-floor="17" data-unit="U08" data-type="3BR" data-area-ft2="1870" d="M1072.5 614H1191.5L1186.5 591H1067.5L1072.5 614Z"/>
+<path id="A-17-U07" class="unit" data-floor="17" data-unit="U07" data-type="3BR" data-area-ft2="1870" d="M1191.5 614H1203L1197.5 591H1186.5L1191.5 614Z"/>
+</g>
+<g id="floor-A-16" class="floor" data-floor="16">
+<path id="A-16-U14" class="unit" data-floor="16" data-unit="U14" data-type="3BR" data-area-ft2="1320" d="M763.5 637.5H801.5V616L763.5 616.5V637.5Z"/>
+<path id="A-16-U12" class="unit" data-floor="16" data-unit="U12" data-type="2BR" data-area-ft2="1135" d="M801.5 637.5H863.5V615.5L801.5 616V637.5Z"/>
+<path id="A-16-U11" class="unit" data-floor="16" data-unit="U11" data-type="1BR" data-area-ft2="680" d="M863.5 637.5H901.5V615L863.5 615.5V637.5Z"/>
+<path id="A-16-U09" class="unit" data-floor="16" data-unit="U09" data-type="2BR" data-area-ft2="1255" d="M956 637H1011H1077.5L1072.5 614H956V637Z"/>
+<path id="A-16-U08" class="unit" data-floor="16" data-unit="U08" data-type="3BR" data-area-ft2="1870" d="M1077.5 637H1197L1191.5 614H1072.5L1077.5 637Z"/>
+<path id="A-16-U07" class="unit" data-floor="16" data-unit="U07" data-type="3BR" data-area-ft2="1870" d="M1197 637H1208L1203 614H1191.5L1197 637Z"/>
+</g>
+<g id="floor-A-15" class="floor" data-floor="15">
+<path id="A-15-U14" class="unit" data-floor="15" data-unit="U14" data-type="3BR" data-area-ft2="1320" d="M763.5 658.5L801.5 659V637.5H763.5V658.5Z"/>
+<path id="A-15-U12" class="unit" data-floor="15" data-unit="U12" data-type="2BR" data-area-ft2="1135" d="M801.5 659H863.5V637.5H801.5V659Z"/>
+<path id="A-15-U10" class="unit" data-floor="15" data-unit="U10" data-type="2BR" data-area-ft2="930" d="M956 660H1011V637H956V660Z"/>
+<path id="A-15-U09" class="unit" data-floor="15" data-unit="U09" data-type="STUDIO" data-area-ft2="465" d="M1011 660H1083L1077.5 637H1011V660Z"/>
+<path id="A-15-U08" class="unit" data-floor="15" data-unit="U08" data-type="3BR" data-area-ft2="1870" d="M1083 660H1202.5L1197 637H1077.5L1083 660Z"/>
+<path id="A-15-U07" class="unit" data-floor="15" data-unit="U07" data-type="3BR" data-area-ft2="1870" d="M1202.5 660H1213.5L1208 637H1197L1202.5 660Z"/>
+</g>
+<g id="floor-A-14" class="floor" data-floor="14">
+<path id="A-14-U14" class="unit" data-floor="14" data-unit="U14" data-type="3BR" data-area-ft2="1320" d="M763.5 680H801.5V659L763.5 658.5V680Z"/>
+<path id="A-14-U12" class="unit" data-floor="14" data-unit="U12" data-type="2BR" data-area-ft2="1135" d="M801.5 680L863.5 681V659H801.5V680Z"/>
+<path id="A-14-U11" class="unit" data-floor="14" data-unit="U11" data-type="1BR" data-area-ft2="680" d="M863.5 681L901.5 681.5V659.5L863.5 659V681Z"/>
+<path id="A-14-U10" class="unit" data-floor="14" data-unit="U10" data-type="2BR" data-area-ft2="1015" d="M956 683H1011V660H956V683Z"/>
+<path id="A-14-U09" class="unit" data-floor="14" data-unit="U09" data-type="STUDIO" data-area-ft2="465" d="M1011 683H1088L1083 660H1011V683Z"/>
+<path id="A-14-U08" class="unit" data-floor="14" data-unit="U08" data-type="3BR" data-area-ft2="1870" d="M1088 683L1207.5 683.5L1202.5 660H1083L1088 683Z"/>
+<path id="A-14-U07" class="unit" data-floor="14" data-unit="U07" data-type="3BR" data-area-ft2="1870" d="M1207.5 683.5H1219L1213.5 660H1202.5L1207.5 683.5Z"/>
+</g>
+<g id="floor-A-12" class="floor" data-floor="12">
+<path id="A-12-U14" class="unit" data-floor="12" data-unit="U14" data-type="3BR" data-area-ft2="1320" d="M763.5 701L801.5 701.5V680H763.5V701Z"/>
+<path id="A-12-U12" class="unit" data-floor="12" data-unit="U12" data-type="2BR" data-area-ft2="1135" d="M801.5 701.5L863.5 703V681L801.5 680V701.5Z"/>
+<path id="A-12-U11" class="unit" data-floor="12" data-unit="U11" data-type="1BR" data-area-ft2="680" d="M863.5 703L901.5 703.5V681.5L863.5 681V703Z"/>
+<path id="A-12-U10" class="unit" data-floor="12" data-unit="U10" data-type="2BR" data-area-ft2="1035" d="M956 705.5L1011 706V683H956V705.5Z"/>
+<path id="A-12-U09" class="unit" data-floor="12" data-unit="U09" data-type="STUDIO" data-area-ft2="465" d="M1011 706H1093L1088 683H1011V706Z"/>
+<path id="A-12-U08" class="unit" data-floor="12" data-unit="U08" data-type="3BR" data-area-ft2="1870" d="M1093 706L1213 706.5L1207.5 683.5L1088 683L1093 706Z"/>
+<path id="A-12-U07" class="unit" data-floor="12" data-unit="U07" data-type="3BR" data-area-ft2="1870" d="M1213 706.5H1224.5L1219 683.5H1207.5L1213 706.5Z"/>
+</g>
+<g id="floor-A-11" class="floor" data-floor="11">
+<path id="A-11-U14" class="unit" data-floor="11" data-unit="U14" data-type="3BR" data-area-ft2="1320" d="M763.5 722L801.5 723V701.5L763.5 701V722Z"/>
+<path id="A-11-U12" class="unit" data-floor="11" data-unit="U12" data-type="2BR" data-area-ft2="1135" d="M801.5 723L863.5 724.5V703L801.5 701.5V723Z"/>
+<path id="A-11-U11" class="unit" data-floor="11" data-unit="U11" data-type="1BR" data-area-ft2="680" d="M863.5 724.5L901.5 726V703.5L863.5 703V724.5Z"/>
+<path id="A-11-U10" class="unit" data-floor="11" data-unit="U10" data-type="2BR" data-area-ft2="1095" d="M956 727L1011 728.5V706L956 705.5V727Z"/>
+<path id="A-11-U09" class="unit" data-floor="11" data-unit="U09" data-type="STUDIO" data-area-ft2="465" d="M1011 728.5L1098.5 730.5L1093 706H1011V728.5Z"/>
+<path id="A-11-U08" class="unit" data-floor="11" data-unit="U08" data-type="3BR" data-area-ft2="1870" d="M1098.5 730.5L1219.5 734L1213 706.5L1093 706L1098.5 730.5Z"/>
+<path id="A-11-U07" class="unit" data-floor="11" data-unit="U07" data-type="3BR" data-area-ft2="1870" d="M1219.5 734H1230.5L1224.5 706.5H1213L1219.5 734Z"/>
+</g>
+<g id="floor-A-10" class="floor" data-floor="10">
+<path id="A-10-U14" class="unit" data-floor="10" data-unit="U14" data-type="3BR" data-area-ft2="1320" d="M763.5 743L801.5 744V723L763.5 722V743Z"/>
+<path id="A-10-U12" class="unit" data-floor="10" data-unit="U12" data-type="2BR" data-area-ft2="1135" d="M801.5 744L863.5 746.5V724.5L801.5 723V744Z"/>
+<path id="A-10-U11" class="unit" data-floor="10" data-unit="U11" data-type="1BR" data-area-ft2="680" d="M863.5 746.5L901.5 748V726L863.5 724.5V746.5Z"/>
+<path id="A-10-U10" class="unit" data-floor="10" data-unit="U10" data-type="2BR" data-area-ft2="900" d="M956 749.5L1011 751V728.5L956 727V749.5Z"/>
+<path id="A-10-U09" class="unit" data-floor="10" data-unit="U09" data-type="1BR" data-area-ft2="680" d="M1011 751L1104 754L1098.5 730.5L1011 728.5V751Z"/>
+<path id="A-10-U08" class="unit" data-floor="10" data-unit="U08" data-type="3BR" data-area-ft2="1870" d="M1104 754L1225 758L1219.5 734L1098.5 730.5L1104 754Z"/>
+<path id="A-10-U07" class="unit" data-floor="10" data-unit="U07" data-type="3BR" data-area-ft2="1870" d="M1225 758L1236.5 758.5L1230.5 734H1219.5L1225 758Z"/>
+</g>
+<g id="floor-A-09" class="floor" data-floor="9">
+<path id="A-09-U14" class="unit" data-floor="9" data-unit="U14" data-type="3BR" data-area-ft2="1320" d="M763.5 764L801.5 765.5V744L763.5 743V764Z"/>
+<path id="A-09-U12" class="unit" data-floor="9" data-unit="U12" data-type="2BR" data-area-ft2="1135" d="M801.5 765.5L863.5 768.5V746.5L801.5 744V765.5Z"/>
+<path id="A-09-U11" class="unit" data-floor="9" data-unit="U11" data-type="1BR" data-area-ft2="680" d="M863.5 768.5L901.5 770V748L863.5 746.5V768.5Z"/>
+<path id="A-09-U10" class="unit" data-floor="9" data-unit="U10" data-type="2BR" data-area-ft2="960" d="M956 771.5L1011 774V751L956 749.5V771.5Z"/>
+<path id="A-09-U09" class="unit" data-floor="9" data-unit="U09" data-type="1BR" data-area-ft2="680" d="M1011 774L1109 778L1104 754L1011 751V774Z"/>
+<path id="A-09-U08" class="unit" data-floor="9" data-unit="U08" data-type="3BR" data-area-ft2="1870" d="M1109 778L1230.5 782.5L1225 758L1104 754L1109 778Z"/>
+<path id="A-09-U07" class="unit" data-floor="9" data-unit="U07" data-type="2BR" data-area-ft2="1325" d="M1230.5 782.5L1242 783L1236.5 758.5L1225 758L1230.5 782.5Z"/>
+</g>
+<g id="floor-A-08" class="floor" data-floor="8">
+<path id="A-08-U14" class="unit" data-floor="8" data-unit="U14" data-type="3BR" data-area-ft2="1320" d="M763.5 785L801.5 787V765.5L763.5 764V785Z"/>
+<path id="A-08-U12" class="unit" data-floor="8" data-unit="U12" data-type="2BR" data-area-ft2="1135" d="M801.5 787L863.5 790V768.5L801.5 765.5V787Z"/>
+<path id="A-08-U11" class="unit" data-floor="8" data-unit="U11" data-type="1BR" data-area-ft2="680" d="M863.5 790L901.5 792V770L863.5 768.5V790Z"/>
+<path id="A-08-U10" class="unit" data-floor="8" data-unit="U10" data-type="2BR" data-area-ft2="1015" d="M956 794L1011 797V774L956 771.5V794Z"/>
+<path id="A-08-U09" class="unit" data-floor="8" data-unit="U09" data-type="1BR" data-area-ft2="680" d="M1011 797L1114.5 802L1109 778L1011 774V797Z"/>
+<path id="A-08-U08" class="unit" data-floor="8" data-unit="U08" data-type="3BR" data-area-ft2="1870" data-note="geometry from floor 7" d="M1114.5 802L1236.5 808L1230.5 782.5L1109 778L1114.5 802Z"/>
+<path id="A-08-U07" class="unit" data-floor="8" data-unit="U07" data-type="2BR" data-area-ft2="1325" data-note="geometry from floor 7" d="M1236.5 808L1248 808.5L1242 783L1230.5 782.5L1236.5 808Z"/>
+</g>
+<g id="floor-A-07" class="floor" data-floor="7">
+<path id="A-07-U14" class="unit" data-floor="7" data-unit="U14" data-type="3BR" data-area-ft2="1320" d="M763.5 806L801.5 808V787L763.5 785V806Z"/>
+<path id="A-07-U12" class="unit" data-floor="7" data-unit="U12" data-type="2BR" data-area-ft2="1135" d="M801.5 808L863.5 811V790L801.5 787V808Z"/>
+<path id="A-07-U11" class="unit" data-floor="7" data-unit="U11" data-type="1BR" data-area-ft2="680" d="M863.5 811L901.5 813V792L863.5 790V811Z"/>
+<path id="A-07-U10" class="unit" data-floor="7" data-unit="U10" data-type="2BR" data-area-ft2="890" d="M956 817L1011 819.5V797L956 794V817Z"/>
+<path id="A-07-U09" class="unit" data-floor="7" data-unit="U09" data-type="2BR" data-area-ft2="890" d="M1011 819.5L1120 825.5L1114.5 802L1011 797V819.5Z"/>
+<path id="A-07-U08" class="unit" data-floor="7" data-unit="U08" data-type="3BR" data-area-ft2="1800" d="M1120 825.5L1242 832L1236.5 808L1114.5 802L1120 825.5Z"/>
+<path id="A-07-U07" class="unit" data-floor="7" data-unit="U07" data-type="2BR" data-area-ft2="1325" d="M1242 832L1253.5 833L1248 808.5L1236.5 808L1242 832Z"/>
+</g>
+<g id="floor-A-06" class="floor" data-floor="6">
+<path id="A-06-U14" class="unit" data-floor="6" data-unit="U14" data-type="3BR" data-area-ft2="1320" d="M763.5 827L801.5 829V808L763.5 806V827Z"/>
+<path id="A-06-U12" class="unit" data-floor="6" data-unit="U12" data-type="2BR" data-area-ft2="1135" d="M801.5 829L863.5 832.5V811L801.5 808V829Z"/>
+<path id="A-06-U10" class="unit" data-floor="6" data-unit="U10" data-type="2BR" data-area-ft2="910" d="M956 839.5L1011 842.5V819.5L956 817V839.5Z"/>
+<path id="A-06-U09" class="unit" data-floor="6" data-unit="U09" data-type="2BR" data-area-ft2="920" d="M1011 842.5L1125 849.5L1120 825.5L1011 819.5V842.5Z"/>
+<path id="A-06-U08" class="unit" data-floor="6" data-unit="U08" data-type="3BR" data-area-ft2="1890" d="M1125 849.5L1248 857L1242 832L1120 825.5L1125 849.5Z"/>
+<path id="A-06-U07" class="unit" data-floor="6" data-unit="U07" data-type="2BR" data-area-ft2="1325" d="M1248 857L1259.5 858L1253.5 833L1242 832L1248 857Z"/>
+</g>
+</svg>

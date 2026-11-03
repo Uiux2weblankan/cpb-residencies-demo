@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Contact Us · Central Park Boulevard</title>
+  <meta name="theme-color" content="#011810">
+  <link rel="icon" href="public/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Italiana&display=swap">
+  <link rel="stylesheet" href="src/css/tokens.css">
+  <link rel="stylesheet" href="src/css/base.css">
+  <link rel="stylesheet" href="src/css/page.css">
+  <script type="module" src="src/js/pages/contact.js"></script>
+</head>
+<body class="page page--inner">
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <!-- 13.0 Contact (demo): the enquiry is validated in the browser and not sent anywhere -->
+  <main id="content" class="inner container">
+    <div class="inner__grid">
+      <div>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Residencies</a><span class="breadcrumb__sep" aria-hidden="true"></span><span aria-current="page">Contact Us</span>
+        </nav>
+        <h1 class="display inner__title" data-contact-title>Contact Us</h1>
+        <p class="inner__lead" data-contact-lead>Tell us what you are looking for and our sales team will get back to you within one working day.</p>
+        <dl class="spec-list">
+          <div><dt>Sales gallery</dt><dd style="font-size:17px">Central Park Boulevard, Port City, Colombo 10100</dd></div>
+          <div><dt>Call</dt><dd style="font-size:17px"><a href="tel:+94112098765">+94 112 098 765</a></dd></div>
+          <div><dt>Email</dt><dd style="font-size:17px"><a href="mailto:centralpark@homelands.lk">centralpark@homelands.lk</a></dd></div>
+          <div><dt>Hours</dt><dd style="font-size:17px">Mon–Sat, 9:00–18:00</dd></div>
+        </dl>
+      </div>
+      <section class="panel" aria-labelledby="form-title" data-form-panel>
+        <h2 class="display" id="form-title" style="font-size:36px;margin-bottom:24px">Send an enquiry</h2>
+        <form class="contact-form" data-contact-form novalidate>
+          <div class="field">
+            <label for="c-name">Full name</label>
+            <input class="input" id="c-name" name="name" autocomplete="name" required>
+            <span class="field__error" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="c-phone">Phone</label>
+            <input class="input" id="c-phone" name="phone" type="tel" autocomplete="tel" required>
+            <span class="field__error" aria-live="polite"></span>
+          </div>
+          <div class="field field--full">
+            <label for="c-email">Email</label>
+            <input class="input" id="c-email" name="email" type="email" autocomplete="email" required>
+            <span class="field__error" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="c-interest">I am interested in</label>
+            <select class="select" id="c-interest" name="interest">
+              <option value="residence">A specific residence</option>
+              <option value="booking">Booking a site visit</option>
+              <option value="general">General information</option>
+            </select>
+            <span class="field__error"></span>
+          </div>
+          <div class="field">
+            <label for="c-unit">Residence reference</label>
+            <input class="input" id="c-unit" name="unit" placeholder="A-25-U07" autocomplete="off">
+            <span class="field__hint">Optional. Filled in when you come from a residence.</span>
+            <span class="field__error" aria-live="polite"></span>
+          </div>
+          <div class="field field--full">
+            <label for="c-message">Message</label>
+            <textarea class="textarea" id="c-message" name="message"></textarea>
+            <span class="field__error"></span>
+          </div>
+          <div class="field field--full">
+            <label class="checkbox"><input type="checkbox" name="consent" required> <span>I agree to be contacted about Central Park Boulevard.</span></label>
+            <span class="field__error" aria-live="polite"></span>
+          </div>
+          <div class="field field--full">
+            <button class="btn btn--primary" type="submit">Send enquiry</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p class="site-footer__legal container">© 2026 Central Park Boulevard. Demo build: enquiries are not sent.</p>
+  </footer>
+</body>
+</html>

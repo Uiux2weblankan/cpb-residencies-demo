@@ -1,0 +1,18 @@
+{
+  "name": "cpb-residences-viewer-demo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Central Park Boulevard residences viewer: demo in vanilla HTML, CSS and JavaScript.",
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "build:assets": "node scripts/build-all.mjs",
+    "build:frames": "node scripts/normalise-frames.mjs",
+    "build:svgs": "node scripts/clean-svgs.mjs",
+    "build:units": "node scripts/build-units.mjs",
+    "build:manifest": "node scripts/build-manifest.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
